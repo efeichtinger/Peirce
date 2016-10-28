@@ -1,27 +1,33 @@
-#' @title Peirce function for characters
+#' @title Peirce function for inital classification of character data
 #' 
 #' @description 
-#' \code{Peirce.char} returns logical values, TRUE or FALSE, indicating exact 
-#'    matches among rows at each column position and logical values for each
-#'    position
-#'   
+#' \code{Peirce.char} evalutaes a data.frame for duplicated rows that represent Peirce's triads
 #'    
-#' @param  DF object of class data.frame with 3 columns
-#' @return logical table TRUE or FALSE for an exact match for entire row
-#'  and a logical value for each column position 
-#'  
+#' @param  DF object of class data.frame with dim [n,3]
+#' @return The number of duplicated rows, if any, and the identity of those rows
+#'
 #' @examples
-#' #Check for matches between 2 rows, matches at all three positions 
-#' and matches at each position  
-#' df[1:2,1:3]
-#'    x2  y2  z2
-#'  1 cat  A  a
-#'  2 cat  B  b
-#'  Peirce.char(df)
-#'  FALSE [TRUE, FALSE, FALSE]
 
 
-Peirce.char <- function(DF){
-  x <- compare(DF[1,],DF[2,])
-  return(x)
+Peirce.char <- function(DF) {    
+  count.duplicates <- function(DF){
+    x <- do.call('paste', c(DF, sep ='\r'))
+    ox <- order(x)
+    r1 <- rle(x[ox])
+    cbind(DF[ox[cumsum(r1$lengths)],,drop=FALSE], count = r1$lengths)
+  }
+  
+  dups <- duplicated(DF, incomparable=FALSE)
+  
+  if (!any(dups[]==TRUE)) {
+    print("No duplicate rows")
+    
+  } else {
+    
+    dups2 <- count.duplicates(DF)
+    
+  }
+  
+    
+  
 }
