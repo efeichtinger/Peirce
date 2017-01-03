@@ -6,7 +6,8 @@
 #' @param  DF object of class data.frame with dim [n,3]
 #' @return list with the index of the first duplicated row, if any, 
 #' and duplicated rows, the identity of those rows and how many times
-#' each row is duplicated 
+#' each row is duplicated, excludes rows that are unique 
+#'
 #' 
 #'
 #' @examples
@@ -29,6 +30,7 @@ Peirce.char <- function(DF) {
   }
   
   dups <- duplicated(DF, incomparable=FALSE)
+  fspot <- anyDuplicated(DF)
   
   if (!any(dups[]==TRUE)) {
     print("No duplicate rows")
@@ -36,7 +38,10 @@ Peirce.char <- function(DF) {
   } else {
     
     dups2 <- count.duplicates(DF)
+    dups3 <- subset(dups2, dups2$count >= 2)
     
+    z <- list(fspot, dups3)
+    return(z)
   }
   
 }
