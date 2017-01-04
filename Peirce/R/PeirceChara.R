@@ -1,7 +1,7 @@
 #' @title Peirce sign function for inital classification of character data
 #' 
 #' @description 
-#' \code{Peirce.char} evalutaes a data.frame for duplicated rows that represent Peirce's triads
+#' \code{charPeirce} evalutaes a data.frame for duplicated rows that represent Peirce's triads
 #'    
 #' @param  DF object of class data.frame with dim [n,3]
 #' @return list with the index of the first duplicated row, if any, 
@@ -21,7 +21,7 @@
 #' 
 
 
-Peirce.char <- function(DF) {    
+charPeirce <- function(DF) {    
   count.duplicates <- function(DF){
     x <- do.call('paste', c(DF, sep ='\r'))
     ox <- order(x)
