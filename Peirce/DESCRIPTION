@@ -1,14 +1,14 @@
-Package: PeirceSign
+Package: Peirce
 Type: Package
 Title: Data classification based on Peirce's semiosis
 Version: 0.1
 Date: 2017-01-04
-Authors@R: c(person("Erin", "Feichtinger", email = efeichtinger@mail.usf.edu,
+Authors@R: c(person("Erin", "Feichtinger", email = "efeichtinger@mail.usf.edu",
     role = c("aut","cre")), person("Alon", "Friedman", role = "aut"))
 Maintainer: <efeichtinger@mail.usf.edu>
 Description: The package Peirce applies sign theory or semiosis to 
     find triadic relationships among three variables consisting of 
     whole numbers or character data.
-LazyData: true
 License: GNU
+LazyData: true
 RoxygenNote: 5.0.1
