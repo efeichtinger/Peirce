@@ -94,5 +94,9 @@ whlPeirce <-  function(DF)
      
   }
   
-  View(DF);
+  #totals <<- DF
+  
+  return(DF);
+  
 }
+
