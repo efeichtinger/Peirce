@@ -11,12 +11,12 @@
 #' 
 #'
 #' @examples
-#' Peirce.char(x)
+#' charPeirce(x)
 #' "No duplicate rows"
 #' 
 #' head(twitter)
 #' 
-#' Peirce.char(twitter)
+#' charPeirce(twitter)
 #' [[1]]   19
 #' 
 
@@ -28,7 +28,7 @@ charPeirce <- function(DF) {
     r1 <- rle(x[ox])
     cbind(DF[ox[cumsum(r1$lengths)],,drop=FALSE], count = r1$lengths)
   }
-  
+  #rows <- cat("No. or rows of input data.frame = ", nrow(DF))
   dups <- duplicated(DF, incomparable=FALSE)
   fspot <- anyDuplicated(DF)
   
@@ -40,7 +40,7 @@ charPeirce <- function(DF) {
     dups2 <- count.duplicates(DF)
     dups3 <- subset(dups2, dups2$count >= 2)
     
-    z <- list(fspot, dups3)
+    z <- list(fspot, dups3, nrow(DF))
     return(z)
   }
   
