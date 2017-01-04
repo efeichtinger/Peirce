@@ -1,13 +1,13 @@
 #' @title Peirce Function for whole numbers 
 #' 
 #' @description
-#' \code{Peirce.whl} returns a data frame with the average distribution
+#' \code{whlPeirce} returns a data frame with the average distribution
 #' 
 #' 
 #' @param DF object of class data.frame with 3 columns 
 #' @return a data frame with the average distribution for each of 3 variables
 #' 
-Peirce.whl <-  function(DF)
+whlPeirce <-  function(DF)
 {
   
   check.numeric <- function(N){
