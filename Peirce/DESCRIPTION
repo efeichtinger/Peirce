@@ -1,10 +1,12 @@
 Package: Peirce
 Type: Package
-Title: Data classification based on Peirce's semiosis 
-Version: 0A
+Title: Data classification based on Peirce's semiosis
+Version: 1.0
 Date: 2016-09-21
 Author: Erin E. Feichtinger and Alon Friedman
 Maintainer: <efeichtinger@mail.usf.edu>
-Description: The package Peirce applies sign theory or semiosis to find triadic relationships among three variables.
-LazyData: true 
-License: GNU 
+Description: The package Peirce applies sign theory or semiosis to find triadic
+    relationships among three variables.
+LazyData: true
+License: GNU
+RoxygenNote: 5.0.1
