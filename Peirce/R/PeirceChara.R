@@ -11,11 +11,6 @@
 #' 
 #'
 #' @examples
-#' charPeirce(x)
-#' "No duplicate rows"
-#' 
-#' head(twitter)
-#' 
 #' charPeirce(twitter)
 #' [[1]]   19
 #' 

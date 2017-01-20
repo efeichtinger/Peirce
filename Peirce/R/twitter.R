@@ -4,7 +4,7 @@
 #' 
 #' @usage data(twitter)
 #' 
-#' @format An object of class data.frame
+#' @format An object of class data.frame with dimensions [199, 3]
 #' 
 #' @keywords datasets
 #' 
