@@ -2,35 +2,17 @@
 \alias{Peirce-package}
 \alias{Peirce}
 \docType{package}
-\title{
+\title{Data classification based on Peirce's semiosis}
 \packageTitle{Peirce}
-}
-\description{
-\packageDescription{Peirce}
-}
-\details{
-
-The DESCRIPTION file:
-\packageDESCRIPTION{Peirce}
-\packageIndices{Peirce}
-~~ An overview of how to use the package, including the most important ~~
-~~ functions ~~
-}
-\author{
-\packageAuthor{Peirce}
-
-Maintainer: \packageMaintainer{Peirce}
-}
-\references{
-~~ Literature or other references for background information ~~
-}
-~~ Optionally other standard keywords, one per line, from file KEYWORDS in ~~
-~~ the R documentation directory ~~
-\keyword{ package }
-\seealso{
-~~ Optional links to other man pages, e.g. ~~
-~~ \code{\link[<pkg>:<pkg>-package]{<pkg>}} ~~
-}
+\description{The package Peirce applies sign theory or semiosis to 
+    find triadic relationships among three variables consisting of 
+    whole numbers or character data.
+    }
+\author{Erin Feichtinger
+Maintainer: Erin Feichtinger <efeichtinger@mail.usf.edu>}
+\references{Friedman, A. and E. Feichtinger. 2017. Peirce's sign theory as
+    an open-source R package. Signs vol 8:pp. 1-24. In press}
 \examples{
-~~ simple examples of the most important functions ~~
+charPeirce(twitter)
+[[1]]   19
 }
