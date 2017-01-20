@@ -7,8 +7,8 @@ Authors@R: c(person("Erin", "Feichtinger", email = "efeichtinger@mail.usf.edu",
     role = c("aut","cre")), person("Alon", "Friedman", role = "aut"))
 Maintainer: <efeichtinger@mail.usf.edu>
 Description: The package Peirce applies sign theory or semiosis to 
-    find triadic relationships among three variables consisting of 
-    whole numbers or character data.
-License: GNU
+    find triadic relationships and subclassifcation among three 
+    variables consisting of whole numbers or character data.
+License: GPL-2
 LazyData: true
 RoxygenNote: 5.0.1
