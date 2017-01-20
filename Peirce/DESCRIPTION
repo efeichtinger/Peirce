@@ -10,6 +10,6 @@ Maintainer: <efeichtinger@mail.usf.edu>
 Description: The package Peirce applies sign theory or semiosis to 
     find triadic relationships among three variables consisting of 
     whole numbers or character data.
-License: GNU
+License: GPL-3
 LazyData: true
 RoxygenNote: 5.0.1
